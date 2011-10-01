@@ -12,6 +12,7 @@ require 'sinatra'
 require 'google/api_client'
 require 'httpadapter/adapters/net_http'
 require 'pp'
+require 'yaml'
 
 use Rack::Session::Pool, :expire_after => 86400 # 1 day
 
@@ -19,9 +20,10 @@ use Rack::Session::Pool, :expire_after => 86400 # 1 day
 # See README.TXT for getting API id and secret
 
 if (ARGV.size < 3)
-  set :oauth_client_id, 'oauth_client_id'
-  set :oauth_client_secret, 'oauth_client_secret'
-  set :google_api_key, 'google_api_key'
+  DEFAULT_CREDENTIALS = YAML::load( File.open( 'credentials.yml' ) )
+  set :oauth_client_id,     DEFAULT_CREDENTIALS['oauth_client_id']
+  set :oauth_client_secret, DEFAULT_CREDENTIALS['oauth_client_secret']
+  set :google_api_key,      DEFAULT_CREDENTIALS['google_api_key']
 
   if (settings.oauth_client_id == 'oauth_client_id' ||
     settings.oauth_client_secret == 'oauth_client_secret' ||

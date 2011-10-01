@@ -39,12 +39,16 @@ Or, if you'd like to dive right in, follow these steps.
    "localhost" for the domain name
  - click "Create client ID"
 
-Edit the app.rb file and enter the values for the following properties that 
-you retrieved from the API Console:
+Where to store your oAuth credentials ?
+ 1° copy credentials.yml.example to credentials.yml
+    cd <project root>
+    cp credentials.yml.example credentials.yml
 
- - oauth_client_id
- - oauth_client_secret
- - google_api_key
+ 2° edit credentials.yml and use the credentials values you retrieved from the API Console:
+   - oauth_client_id
+   - oauth_client_secret
+   - google_api_key
+
 
 Or, include them in the command line as the first three arguments in that order.
 
