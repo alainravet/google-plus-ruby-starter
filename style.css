@@ -1,0 +1,160 @@
+/*
+ * Copyright 2011 Google Inc.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  font-family: Arial,sans-serif;
+  margin: auto;
+}
+
+.box {
+  border: .5em solid #E3E9FF;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+
+  -moz-box-orient: vertical;
+  -moz-box-align: center;
+
+  display: block;
+  box-orient: vertical;
+  box-align: center;
+
+  width: 350px;
+  height: auto;
+
+  margin: auto;
+  padding: 10px;
+}
+
+.largerbox {
+  border: .5em solid #E3E9FF;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+
+  -moz-box-orient: vertical;
+  -moz-box-align: center;
+
+  display: block;
+  box-orient: vertical;
+  box-align: center;
+
+  width: 800px;
+  height: auto;
+
+  margin: auto;
+  padding: 10px;
+}
+
+.largerbox dd{
+  width:300px;
+  word-wrap: break-word;
+}
+
+.box p {
+  margin: 0 2px;
+}
+
+.me {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  width: 100px;
+}
+
+.recommended {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
+  width:100%;
+}
+
+header {
+  color:#000;
+  padding:2px 5px;
+  font-size:100%;
+  width: 400px;
+  margin: auto;
+  text-align: center
+}
+footer {
+  color:#001;
+  font-size:70%;
+  overflow: visible;
+  margin: auto;
+  padding-top: 5px;
+  text-align: center
+}
+
+header h1.logo {
+  margin:6px 0;
+  padding:0;
+  cursor:pointer;
+  font-size:24px;
+  line-height:20px;
+}
+
+.login {
+  font-size: 200%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #2779AA;
+  line-height: normal;
+}
+
+.logout {
+  font-weight: normal;
+  padding-top: -5px;
+  margin-top: 0;
+}
+
+.contact {
+  color: #36C;
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.contact-img {
+  float: left;
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+.contact-link {
+  overflow: hidden;
+  padding-left: 10px;
+  position: relative;
+}
+
+h3 {
+  border-bottom: 1px solid;
+  width: 320px;
+}
+
+.box dt {
+  float: left;
+  clear: both;
+  width: 140px;
+}
+.box dd {
+  clear: both;
+  margin-left: 140px;
+  margin-top: -15px;
+  width: 200px;
+}
