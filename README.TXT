@@ -64,3 +64,23 @@ directory. If not check out the code to a local directory.
 2. Open your web browser and see your activities! Go to http://localhost:4567/
 
 3. Be inspired and start hacking an amazing new web app!
+
+
+Troubleshooting :
+=================
+
+* For development on 'localhost', make sure you select, in the API console, "http" for
+    Redirect URIs
+    javascript origins
+  when creating the API access oAuth credentials for a new client.
+
+
+* Make sure the 'Google+ API' service is activated in the API console "Services" section.
+  Otherwise you will get an accessConfiguredError
+
+
+* Make sure you have at least 1 public activity, otherwise the app will raise an error.
+  Otherwise you will get a NPE on "activities['items']"
+
+
+
